@@ -1,0 +1,92 @@
+# Window Customization
+window:
+  opacity: .7
+  dimensions:
+    columns: 140
+    lines: 38
+  padding:
+    x: 35
+    y: 35
+  decorations: full #Still won't show in a window manger, but will in a desktop environment
+scrolling:
+  history: 10000
+  multiplier: 3
+window.dynamic_title: true
+
+# Font Customization
+font:
+  normal:
+    family: terminus
+    style: Regular
+  bold:
+    family: terminus
+    style: Bold
+  italic:
+    family: terminus
+    style: Italic
+  size: 10
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  debug:
+    persistent_logging: false
+draw_bold_text_with_bright_colors: true
+
+# Colors (Hyper)
+colors:
+  # Default colors
+  primary:
+    background: '#101010'
+    foreground: '#f3f6f4'
+  cursor:
+    text: '#F81CE5'
+    cursor: '#ffffff'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#d0d0d0'
+
+  # Bright colors
+  bright:
+    black:   '#808080'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#FFFFFF'
+
+  indexed_colors:
+    - { index: 16, color: '0xdc9656' }
+    - { index: 17, color: '0xa16946' }
+    - { index: 18, color: '0x282828' }
+    - { index: 19, color: '0x383838' }
+    - { index: 20, color: '0xb8b8b8' }
+    - { index: 21, color: '0xe8e8e8' }
+
+  selection:
+    text: '0xffffff'
+    background: '0xdc3232'
+    white:   '0xffffff'
+
+cursor:
+  style:
+    shape: Beam
+    blinking: off
+    blink-interval: 750
+    unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
