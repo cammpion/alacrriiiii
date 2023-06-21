@@ -14,3 +14,23 @@ DHCP=yes
 then run this comands
 $ sudo systemctl start systemd-networkd
 $ sudo systemctl start systemd-resolved
+
+
+
+FVWM3 DOCK
+DestroyModuleConfig MyButtons: *
+*MyButtons: Geometry 420x60-1050+0
+*MyButtons: Colorset 7
+*MyButtons: Rows 1
+*MyButtons: Columns 8
+*MyButtons: Frame 0
+*MyButtons: Font "Shadow=3:xft:Sans:Bold:pixelsize=14:minspace=True:antialias=True"
+*MyButtons: (2x1, Frame 0, Title(Center) "")
+*MyButtons: (5x1, Frame 0, Icon 48x48/exe.ico, \
+  Action(Mouse 1) "FvwmTerm", \
+  Action(Mouse 3) "FvwmTerm")
+*MyButtons: (5x1, Frame 0, Icon 48x48/network.png, \
+  Action(Mosue 1) "FvwmBrowser")
+*MyButtons: (5x1, Frame 0, Icon 48x48/tux.png, \
+  Action(Mouse 1) "FvwmLaunch")
+*MyButtons: (1x1, Frame 0)
